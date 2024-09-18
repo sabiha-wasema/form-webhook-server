@@ -39,17 +39,12 @@ async function run() {
       res.status(200).send(result);
     });
 
-
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
   }
 }
 run().catch(console.dir);
-
-
-
-
 
 
 app.get('/', (req, res) => {
